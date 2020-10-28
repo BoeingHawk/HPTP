@@ -484,7 +484,7 @@
               <div class="validate"></div>
             </div>
             
-            <div class="text-center" id ="demo"> <button type="submit" onclick = "message()">Send Message</button></div>
+            <div class="text-center" > <button id ="demo" type="submit">Send Message</button></div>
                                                     
           </form> 
                                                           
@@ -595,8 +595,8 @@
   <!-- Vendor JS Files -->
    <script>
 function message() {
-     alert("Message Sent");
-     }
+     document.getElementById('demo').addEventListener('click',function() { alert("Message Sent");});
+                           }
 </script>  
                       
   <script src="assets/vendor/jquery/jquery.min.js"></script>
